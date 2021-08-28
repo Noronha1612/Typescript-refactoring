@@ -1,8 +1,9 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.div<{ available: boolean }>`
   background: #f0f0f5;
   border-radius: 8px;
+  max-width: 352px;
 
   header {
     background: #ffb84d;
@@ -21,6 +22,7 @@ export const Container = styled.div`
     img {
       pointer-events: none;
       user-select: none;
+      max-width: 352px;
     }
   }
 
